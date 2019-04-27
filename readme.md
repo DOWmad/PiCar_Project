@@ -48,9 +48,9 @@ However, the model for this group recognises 6 signs.
 6. Signal (traffic light)
 
 Links (to be added):
-1. [Sign Recognition] (https://youtu.be/6qRq6aZwnzw)
-2. [Lane Detection] (https://youtu.be/vaN8VT8Z0qA)
-3. [Moving Car and Stop sign recognition] (https://youtu.be/IbNAn3VLDZg)
+1. [![Recognise Traffic Signs](http://img.youtube.com/vi/6qRq6aZwnzw/0.jpg)](http://www.youtube.com/watch?v=6qRq6aZwnzw "Sign Recognition")
+2. [![Lane Detection with PiCar](http://img.youtube.com/vi/vaN8VT8Z0qA/0.jpg)](http://www.youtube.com/watch?v=vaN8VT8Z0qA "Lane Detection")
+3. [![Moving Car and Stop Sign](http://img.youtube.com/vi/IbNAn3VLDZg/0.jpg)](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
 
 ## Suggestions on limitations
 
