@@ -54,4 +54,19 @@ Links (to be added):
 
 ## Suggestions on limitations
 
+* HDMI port should not be stuck behind servo
+* Protective shell for exposed circuits
+* Points for improvement on lane detection:
+
+* Curved line detection would be beneficial, as I think the code only handles straight lines.
+* I had thought the use of going into the HSV color space and boosting a particular color hue to enhance the line detection.
+* The camera should be made use of to do scan if it is not finding 2 lanes.
+* I found that optimizing the OpenCV library itself can lead to a significant improvement. See this link:
+* https://www.theimpossiblecode.com/blog/build-faster-opencv-raspberry-pi3/
+
+### Points for improvement on controlling wheels:
+
+* I think the movement of the car should be left to while loops to ensure smooth movement. E.g. whilst lanes are detected and car is aligned properly then keep moving forward.
+* The car should also stop if no lanes are detected.
+* Speed should also be dynamically adjusted. 
 
