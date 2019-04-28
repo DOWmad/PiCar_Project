@@ -22,7 +22,7 @@ Images (to be added):
 
 ## Dataset
 
-* Image sie: 28x28
+* Image size: 28x28
 * Number of Stop_Sign images:
 * Number of RailRoad images:
 * Number of Yield_Sign images: 
@@ -36,7 +36,9 @@ Setting up the OS and configuring it to be used.
 
 ### CNN Architecture:
 
-![CNN Architecture] (signs_model.png)
+![CNN Architecture]
+(signs_model.png)
+
 Creating the Neural Network model to recognise stop sign initially.
 
 However, the model for this group recognises 6 signs.
