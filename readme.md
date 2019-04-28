@@ -36,6 +36,7 @@ Setting up the OS and configuring it to be used.
 
 ### CNN Architecture:
 
+![CNN Architecture] (signs_model.png)
 Creating the Neural Network model to recognise stop sign initially.
 
 However, the model for this group recognises 6 signs.
