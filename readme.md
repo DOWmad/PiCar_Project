@@ -37,7 +37,7 @@ Setting up the OS and configuring it to be used.
 ### CNN Architecture:
 
 ![CNN Architecture]
-(signs_model.png)
+(https://github.com/DOWmad/PiCar_Project/blob/master/signs_model.png)
 
 Creating the Neural Network model to recognise stop sign initially.
 
