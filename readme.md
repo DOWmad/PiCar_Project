@@ -38,6 +38,9 @@ Setting up the OS and configuring it to be used.
 
 ![CNN Architecture](https://github.com/DOWmad/PiCar_Project/blob/master/signs_model.png)
 
+### Training
+
+![Training Results](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
 Creating the Neural Network model to recognise stop sign initially.
 
 However, the model for this group recognises 6 signs.
