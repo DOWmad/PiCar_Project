@@ -58,7 +58,7 @@ Links:
 1. [Recognise Traffic Signs](http://www.youtube.com/watch?v=6qRq6aZwnzw "Sign Recognition")
 2. [Lane Detection with PiCar](http://www.youtube.com/watch?v=vaN8VT8Z0qA "Lane Detection")
 3. [Moving Car and Stop Sign](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
-
+4. [Testing car drive with signs](https://youtu.be/fZW2c-99Lec "Testing car drive with signs")
 ## Suggestions on limitations
 
 * HDMI port should not be stuck behind servo
