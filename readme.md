@@ -7,7 +7,7 @@ It recognises several traffic signs.
 
 The building of the car:
 
-Images (to be added):
+Images:
 
 *  [Image 1](https://drive.google.com/open?id=1qRFprUwxraU2BONuyHZT7aT9OYGDUnbf)
 *  [Image 2](https://drive.google.com/open?id=1oT72TggzrbR4Aw_tmEFDYx2deOoa65sN)
@@ -41,6 +41,8 @@ Setting up the OS and configuring it to be used.
 ### Training
 
 ![Training Results](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
+
+
 Creating the Neural Network model to recognise stop sign initially.
 
 However, the model for this group recognises 6 signs.
@@ -52,7 +54,7 @@ However, the model for this group recognises 6 signs.
 5. RailRoad
 6. Signal (traffic light)
 
-Links (to be added):
+Links:
 1. [Recognise Traffic Signs](http://www.youtube.com/watch?v=6qRq6aZwnzw "Sign Recognition")
 2. [Lane Detection with PiCar](http://www.youtube.com/watch?v=vaN8VT8Z0qA "Lane Detection")
 3. [Moving Car and Stop Sign](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
