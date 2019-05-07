@@ -40,7 +40,7 @@ Setting up the OS and configuring it to be used.
 ### Training
 
 ![Training Results](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
-![Stop Not Stop Training](https://github.com/DOWmad/PiCar_Project/blob/master/stop_notStop.png)
+![Stop Not Stop Training](https://github.com/DOWmad/PiCar_Project/blob/master/stop_notStop_acc.png)
 
 Creating the Neural Network model to recognise stop sign initially.
 
