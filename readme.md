@@ -1,9 +1,11 @@
 ## PiCar Project
 
-This is a model for a small raspberry pi autonmous car.
-It recognises several traffic signs.
+This project has the following requirements:
+* Lane detection
+* Train a Neural Model to recognise traffic signs (up to 6)
+* Drive down a track and correct itself if it deviates.
 
-### Phase 1,2 and 3
+### Phases 1,2 and 3
 
 The building of the car:
 
@@ -23,12 +25,8 @@ Images:
 ## Dataset
 
 * Image size: 28x28
-* Number of Stop_Sign images:
-* Number of RailRoad images:
-* Number of Yield_Sign images: 
-* Number of High_Speed images
-* Number of Low_Speed images
-* Number of Signal images: 
+* Total number of images: 2550
+
 
 Setting up the OS and configuring it to be used.
 
@@ -37,11 +35,12 @@ Setting up the OS and configuring it to be used.
 ### CNN Architecture:
 
 ![CNN Architecture](https://github.com/DOWmad/PiCar_Project/blob/master/signs_model.png)
+![Short CNN Model](https://github.com/DOWmad/PiCar_Project/blob/master/CNN_model_short.png)
 
 ### Training
 
 ![Training Results](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
-
+![Stop Not Stop Training](https://github.com/DOWmad/PiCar_Project/blob/master/stop_notStop.png)
 
 Creating the Neural Network model to recognise stop sign initially.
 
@@ -54,11 +53,12 @@ However, the model for this group recognises 6 signs.
 5. RailRoad
 6. Signal (traffic light)
 
-Links:
+Video Clip Links:
 1. [Recognise Traffic Signs](http://www.youtube.com/watch?v=6qRq6aZwnzw "Sign Recognition")
 2. [Lane Detection with PiCar](http://www.youtube.com/watch?v=vaN8VT8Z0qA "Lane Detection")
 3. [Moving Car and Stop Sign](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
 4. [Testing car drive with signs](https://youtu.be/fZW2c-99Lec "Testing car drive with signs")
+
 ## Suggestions on limitations
 
 * HDMI port should not be stuck behind servo
