@@ -1,6 +1,7 @@
-## PiCar Project
+## Autonomous PiCar Project utilizing datamining techniques
 
-This project has the following requirements:
+#### This project has the following requirements:
+* Build and setup the car
 * Lane detection
 * Train a Neural Model to recognise traffic signs (up to 6)
 * Drive down a track and correct itself if it deviates.
