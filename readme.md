@@ -7,11 +7,9 @@ This project has the following requirements:
 
 ### Phases 1 -  3
 
-The building of the car:
+### Images:
 
-Images:
-
-Car Build:
+#### Car Build:
 
 *  [Image 1](https://drive.google.com/open?id=1qRFprUwxraU2BONuyHZT7aT9OYGDUnbf)
 *  [Image 2](https://drive.google.com/open?id=1oT72TggzrbR4Aw_tmEFDYx2deOoa65sN)
@@ -24,7 +22,7 @@ Car Build:
 *  [Image 9](https://drive.google.com/open?id=11HHeoyQrSXIRbSPK4a78_NjNQN1QT0RM)
 *  [Image 10](https://drive.google.com/open?id=1mZ2oYhBbblA1ZFDlyoyjrI_eOFc1driL)
 
-Software config:
+#### Software config:
 
 *  [Image 1](https://drive.google.com/open?id=11-FAVVyjcwZH6j3xSx2mT9xkuXvrgT4X)
 *  [Image 2](https://drive.google.com/open?id=1GrOu_MUWyIbRqUHSRJmp20WTU0aTA5tE)
@@ -65,7 +63,7 @@ However, the model for this group recognises 6 signs.
 5. RailRoad
 6. Signal (traffic light)
 
-Video Clip Links:
+#### Video Clip Links:
 1. [Recognise Traffic Signs](http://www.youtube.com/watch?v=6qRq6aZwnzw "Sign Recognition")
 2. [Lane Detection with PiCar](http://www.youtube.com/watch?v=vaN8VT8Z0qA "Lane Detection")
 3. [Moving Car and Stop Sign](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
@@ -92,7 +90,7 @@ Video Clip Links:
 
 ### Questions
 
-####1. Image Size
+#### 1. Image Size
 
 The size of the image can improve the training of the Neural Network. 
 Simply by cropping the image to the region of interest means there is a smaller size and less time is spent to distinguish unrelated objects in the image. Therefore, when considering hundreds of images for testing and training this can make it a big difference quicker both in terms of accuracy and speed.
