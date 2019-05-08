@@ -5,7 +5,7 @@ This project has the following requirements:
 * Train a Neural Model to recognise traffic signs (up to 6)
 * Drive down a track and correct itself if it deviates.
 
-### Phases 1,2 and 3
+### Phases 1 -  3
 
 The building of the car:
 
@@ -53,7 +53,6 @@ Software config:
 ### Training
 
 ![Training Results](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
-![Stop Not Stop Training](https://github.com/DOWmad/PiCar_Project/blob/master/stop_notStop_acc.png)
 
 Creating the Neural Network model to recognise stop sign initially.
 
@@ -93,25 +92,25 @@ Video Clip Links:
 
 ### Questions
 
-1. Image Size
+####1. Image Size
 
 The size of the image can improve the training of the Neural Network. 
 Simply by cropping the image to the region of interest means there is a smaller size and less time is spent to distinguish unrelated objects in the image. Therefore, when considering hundreds of images for testing and training this can make it a big difference quicker both in terms of accuracy and speed.
- This should then also help the CNN kernels extract features.
+This should then also help the CNN kernels extract features.
 
-2. How to design CNN architecture including how many layers, what kind of layers, and so on
+#### 2. How to design CNN architecture including how many layers, what kind of layers, and so on
 Building a CNN is about being efficient and effective. It is also a challenge to speculate on how many layers and what kind of CNN is best, because of variations based on the intended purpose. In general, there are no strict rules to be adhered to, or a true default to follow. In many cases, trial and error is required before the correct CNN design is built. Common factors involved in a CNN are: an input layer, at least two CNN layers, a max pooling layer, loss calculation then output. There is also the filter which is part of the convolution, dropout layers and rectification layers. A good approach is to review other, well established CNN such as DenseNet: the premise of a dense CNN is that it would reference feature maps from previous layers of the network, which increases variation in the input of subsequent layers [1]. 
 
-3.How to optimize the model including parameter values, drop out, back propagation, learning rate, # of epoch and so on
+#### 3. How to optimize the model including parameter values, drop out, back propagation, learning rate, # of epoch and so on
 
 A model trained for an image-recognition CNN would benefit from the improvement of the training data: As the network is fed training data, it improves its parameters by using both stochastic gradient descent (including optimizers such as Adam) and back propagation with each epoch. Optimization of a CNN would benefit from recognizing the present limitations. Since training a CNN on a common laptop or desktop computer is largely out of the question due to lack of CPU capability to handle the datasets, an idea to optimize would be to create several train/validate sets from multiple, similar datasets and then run more epochs on smaller sets. Back propagation can come into play to do the “learning” of the network by taking the loss and calculating the implication of each layer with respect to the loss to then adjust the weights to improve the loss.
 Choosing the optimal learning rate is crucial since if it is too low then the learning will take far longer and it is too high then it may fail to converge.
 
-4. Evaluations
+#### 4. Evaluations
 To evaluate the performance of the CNN, parameters for accuracy need to be set. The development of a train/validation pair of data is generally what is used. 
 The use of logarithmic loss during training is advised, and then running the trained CNN through a Confusion Matrix will help evaluate the true performance of the model [2].
 
-5. How to overcome the limitations in your DM-Car implementation
+#### 5. How to overcome the limitations in your DM-Car implementation
 
 After building the car and achieving connection to it, past software errors the biggest limitation in our DM- Car implementation is lack of power. 
 To train our CNN for a desired high accuracy rate, we would need to train it using a data set of thousands—hundreds of thousands of images perhaps, and we do not have sufficient processing power to handle the task. Further, the RaspberryPi itself is a low-powered device with limited capabilities. 
