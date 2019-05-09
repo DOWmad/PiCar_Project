@@ -120,10 +120,12 @@ By being careful and optimizing as much as possible and generating a trained mod
 2. [Lane Detection with PiCar](http://www.youtube.com/watch?v=vaN8VT8Z0qA "Lane Detection")
 3. [Moving Car and Stop Sign](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
 4. [Testing car drive with signs](https://youtu.be/fZW2c-99Lec "Testing car drive with signs")
+5. [Speed boost](https://youtu.be/icZfAwHl-rU "High Speed Detection")
 
 ## Training details
 ---
 
+![Stop sign recognition](https://github.com/DOWmad/PiCar_Project/blob/master/stop.jpg)
 
 ### CNN Architecture:
 
@@ -153,6 +155,8 @@ However, the model for this group recognises 6 signs.
 ---
 
 ### Team placed First
+
+#### Final video:
 
 
 
