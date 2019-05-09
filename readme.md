@@ -66,11 +66,12 @@ In addition, the car should also be capable of lane detection and not stray outs
 ## Phase 3 
 ---
 
-### Q: How to imrpove lane detection
+### Q: How to improve lane detection
 
 * Curved lane detection would be an imrpovment as current code ahndles only straight lines.
 * Possibly using the HSV color space to boost a particular color hue to enhance lane detection.
 * Angling the camera for a better view.
+* Training a Neural model may also be a possibility to recognise the track better.
 * Optimising the OpenCV library itself [Improve OpenCV](https://www.theimpossiblecode.com/blog/build-faster-opencv-raspberry-pi3/)
 
 ### Q: How to improve controlling wheels
@@ -121,6 +122,7 @@ By being careful and optimizing as much as possible and generating a trained mod
 3. [Moving Car and Stop Sign](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
 4. [Testing car drive with signs](https://youtu.be/fZW2c-99Lec "Testing car drive with signs")
 5. [Speed boost](https://youtu.be/icZfAwHl-rU "High Speed Detection")
+6. [Round 1 Competition](https://youtu.be/cv1fI8yL6FA)
 
 ## Training details
 ---
