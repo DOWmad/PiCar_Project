@@ -1,16 +1,24 @@
-## Autonomous PiCar Project utilizing datamining techniques
+<p style="text-align: center;">Autonomous Car using Data Mining: Deep Learning 
+======
+</p>
+Group4
+------
 
-#### This project has the following requirements:
-* Build and setup the car
-* Lane detection
-* Train a Neural Model to recognise traffic signs (up to 6)
-* Drive down a track and correct itself if it deviates.
+## This project has the following requirements:
 
-### Phases 1 -  3
+* Understanding Data Mining Techniques and Deep Learning
+* Become familiar with Python, Keras, Tensorflow and OpenCV
+* Gain experience with research on autonomous vehicle and data mining
 
-### Images:
+To do this we built a raspberry pi powered car with a trained deep learning model to recognise and respond to up to 6 traffic signs.
+In addition, the car should also be capable of lane detection and not stray outside of the lanes.
 
-#### Car Build:
+## Phase 1 - Assemble the car
+---
+
+* Model: Sunfounder Smart Video Car Kit V2.0 for Raspberry Pi
+
+### Car Build:
 
 *  [Image 1](https://drive.google.com/open?id=1qRFprUwxraU2BONuyHZT7aT9OYGDUnbf)
 *  [Image 2](https://drive.google.com/open?id=1oT72TggzrbR4Aw_tmEFDYx2deOoa65sN)
@@ -23,7 +31,26 @@
 *  [Image 9](https://drive.google.com/open?id=11HHeoyQrSXIRbSPK4a78_NjNQN1QT0RM)
 *  [Image 10](https://drive.google.com/open?id=1mZ2oYhBbblA1ZFDlyoyjrI_eOFc1driL)
 
-#### Software config:
+### Q: Car Improvement suggestions:
+
+* Better supplied instructions. Diagrams are poor quality and mistakes were evident in the text.
+* Not putting hdmi port behind servo
+* Would prefer more sturdy materials or at least replacement plastic boards.
+* Different wheels for better traction on different surfaces.
+* There should be a protective shell on the car to protect sensitive boards.
+* Battery placement on the bottom and held in with a ribbon does not seem the best idea. Perhaps a case with a firm fastened lid.
+* Some sort of battery sensor would be nice to know when the batteries are low.
+
+## Phase 2: Setting up the Raspbian OS
+---
+
+### Q: Improvement suggestions for connectitvity:
+
+### A:
+* A wifi direct option would be preferrable as latency in the router is not great.
+* Can possibly be achieved by using dnsmasq and may help improve image reliability for person using the car.
+
+### Software config:
 
 *  [Image 1](https://drive.google.com/open?id=11-FAVVyjcwZH6j3xSx2mT9xkuXvrgT4X)
 *  [Image 2](https://drive.google.com/open?id=1GrOu_MUWyIbRqUHSRJmp20WTU0aTA5tE)
@@ -36,58 +63,26 @@
 *  [Image 9](https://drive.google.com/open?id=1rqPYRZnEoBUHbzVvpTqL3dIlZ0xD2vlp)
 *  [Image 10](https://drive.google.com/open?id=1MM3JT71xHO-q5cV_ld4imqXzcrvzG8qM)
 
-## Dataset
+## Phase 3 
+---
 
-* Image size: 28x28
-* Total number of images: 2550
+### Q: How to imrpove lane detection
+
+* Curved lane detection would be an imrpovment as current code ahndles only straight lines.
+* Possibly using the HSV color space to boost a particular color hue to enhance lane detection.
+* Angling the camera for a better view.
+* Optimising the OpenCV library itself [Improve OpenCV](https://www.theimpossiblecode.com/blog/build-faster-opencv-raspberry-pi3/)
+
+### Q: How to improve controlling wheels
+
+* Small incremement changes once beyond a certain error threshold.
+* Constant while loop.
+* Car should stop if no lanes are detected.
+* Dynamic adjustment of speed.
 
 
 ## Phase 4
-
-### CNN Architecture:
-
-![CNN Architecture](https://github.com/DOWmad/PiCar_Project/blob/master/signs_model.png)
-![Short CNN Model](https://github.com/DOWmad/PiCar_Project/blob/master/CNN_model_short.png)
-
-### Training
-
-![Training Results](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
-
-Creating the Neural Network model to recognise stop sign initially.
-
-However, the model for this group recognises 6 signs.
-
-1. Stop
-2. Yield
-3. Low speed
-4. High speed
-5. RailRoad
-6. Signal (traffic light)
-
-#### Video Clip Links:
-1. [Recognise Traffic Signs](http://www.youtube.com/watch?v=6qRq6aZwnzw "Sign Recognition")
-2. [Lane Detection with PiCar](http://www.youtube.com/watch?v=vaN8VT8Z0qA "Lane Detection")
-3. [Moving Car and Stop Sign](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
-4. [Testing car drive with signs](https://youtu.be/fZW2c-99Lec "Testing car drive with signs")
-
-## Suggestions on limitations
-
-* HDMI port should not be stuck behind servo
-* Protective shell for exposed circuits
-* Points for improvement on lane detection:
-
-* Curved line detection would be beneficial, as I think the code only handles straight lines.
-* I had thought the use of going into the HSV color space and boosting a particular color hue to enhance the line detection.
-* The camera should be made use of to do scan if it is not finding 2 lanes.
-* I found that optimizing the OpenCV library itself can lead to a significant improvement. See this link:
-* https://www.theimpossiblecode.com/blog/build-faster-opencv-raspberry-pi3/
-
-### Points for improvement on controlling wheels:
-
-* I think the movement of the car should be left to while loops to ensure smooth movement. E.g. whilst lanes are detected and car is aligned properly then keep moving forward.
-* The car should also stop if no lanes are detected.
-* Speed should also be dynamically adjusted. 
-
+---
 
 ### Questions
 
@@ -115,4 +110,49 @@ After building the car and achieving connection to it, past software errors the 
 To train our CNN for a desired high accuracy rate, we would need to train it using a data set of thousands—hundreds of thousands of images perhaps, and we do not have sufficient processing power to handle the task. Further, the RaspberryPi itself is a low-powered device with limited capabilities. 
 These limitations might become significant drawbacks with logarithmic loss and a lower efficiency of back propagation during testing.
 By being careful and optimizing as much as possible and generating a trained model with high accuracy we can help ensure the RaspberryPi is utilized effectively.
+
+
+## Phase 5 - Putting it all together
+---
+
+### Video Clip Links:
+1. [Recognise Traffic Signs](http://www.youtube.com/watch?v=6qRq6aZwnzw "Sign Recognition")
+2. [Lane Detection with PiCar](http://www.youtube.com/watch?v=vaN8VT8Z0qA "Lane Detection")
+3. [Moving Car and Stop Sign](http://www.youtube.com/watch?v=IbNAn3VLDZg "Moving Car and Stop Sign")
+4. [Testing car drive with signs](https://youtu.be/fZW2c-99Lec "Testing car drive with signs")
+
+## Training details
+---
+
+
+### CNN Architecture:
+
+![CNN Architecture](https://github.com/DOWmad/PiCar_Project/blob/master/signs_model.png)
+![Short CNN Model](https://github.com/DOWmad/PiCar_Project/blob/master/CNN_model_short.png)
+
+### Dataset
+
+* Image size: 28x28
+* Total number of images: 2550
+
+
+### Training
+
+![Training Results for all 6 signs](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
+
+However, the model for this group recognises 6 signs.
+
+1. Stop
+2. Yield
+3. Low speed
+4. High speed
+5. RailRoad
+6. Signal (traffic light)
+
+## Final Phase - The competition:
+---
+
+### Team placed First
+
+
 
