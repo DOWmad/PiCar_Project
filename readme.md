@@ -1,6 +1,6 @@
-<p style="text-align: center;">Autonomous Car using Data Mining: Deep Learning 
+Autonomous Car using Data Mining: Deep Learning 
 ======
-</p>
+
 Group4
 ------
 
