@@ -1,7 +1,7 @@
 # USAGE
 # python train_network.py --dataset images --model stop_not_stop.model 
  
-# set the matplotlib backend so figures can be saved in the background
+# set the matplotlib backend so figures can be saved in the background 
 import matplotlib
 matplotlib.use("Agg")
 
@@ -43,6 +43,7 @@ BS = 32
 print("[INFO] loading images...")
 data = []
 labels = []
+dt = []
 
 # grab the image paths and randomly shuffle them
 #list_images assumes that all files in a folder are images eg no txt files
@@ -51,11 +52,19 @@ imagePaths = sorted(list(paths.list_images('C:/Users/ddabl/Documents/computer/DM
 random.seed(42)
 random.shuffle(imagePaths)
 
+count = 0
+for imagePath in imagePaths:
+    count = count + 1
+
+print (count) #2550
+
 # loop over the input images
 for imagePath in imagePaths:
     # load the image, pre-process it, and store it in the data list
     image = cv2.imread(imagePath)
+    #image = cv2.resize(image, (300, 300))
     image = cv2.resize(image, (28, 28))
+    dt.append(image)
     image = img_to_array(image)
     data.append(image)
 
@@ -75,13 +84,25 @@ for imagePath in imagePaths:
         label = 4
     elif label =="yield":
         label = 5
+    elif label =="floor":
+        label = 6
         
     labels.append(label)
 
+"""
 #print (labels)
+count = 0
+for label in labels:
+    count = count + 1
+    
+print (count)
 
-
-
+img = cv2.imread(dt[0],0)
+cv2.imshow('image',img)
+k = cv2.waitKey(0)
+if k == 27: # wait for ESC key to exit
+    cv2.destroyAllWindows()
+"""
 # scale the raw pixel intensities to the range [0, 1]
 data = np.array(data, dtype="float") / 255.0
 labels = np.array(labels)
@@ -94,8 +115,8 @@ labels = np.array(labels)
 # convert the labels from integers to vectors
 #trainY = to_categorical(trainY, num_classes=2)
 #testY = to_categorical(testY, num_classes=2)
-trainY = to_categorical(trainY, num_classes=6)
-testY = to_categorical(testY, num_classes=6)
+trainY = to_categorical(trainY, num_classes=7)
+testY = to_categorical(testY, num_classes=7)
 
 
 # construct the image generator for data augmentation
@@ -107,7 +128,7 @@ aug = ImageDataGenerator(rotation_range=30, width_shift_range=0.1,
 print("[INFO] compiling model...")
 
 #model = LeNet.build(width=28, height=28, depth=3, classes=2)
-model = LeNet.build(width=28, height=28, depth=3, classes=6)
+model = LeNet.build(width=28, height=28, depth=3, classes=7)
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
 
 
@@ -129,7 +150,7 @@ H = model.fit_generator(aug.flow(trainX, trainY, batch_size=BS),
 print("[INFO] serializing network...")
 
 #model.save(args["model"])
-model.save('C:/Users/ddabl/Documents/computer/DM/assignments/auton/saved_modelv1.model')
+model.save('C:/Users/ddabl/Documents/computer/DM/assignments/auton/saved_modelv2_5_3.model')
 
 # plot the training loss and accuracy
 plt.style.use("ggplot")
@@ -148,7 +169,7 @@ plt.legend(loc="lower left")
 plt.show()
 
 #plt.savefig(args["plot"])
-plt.savefig('C:/Users/ddabl/Documents/computer/DM/assignments/auton/plot2')
+plt.savefig('C:/Users/ddabl/Documents/computer/DM/assignments/auton/plot3_5_3')
 
 
 
