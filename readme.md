@@ -138,8 +138,12 @@ By being careful and optimizing as much as possible and generating a trained mod
 
 * Image size: 28x28
 * Total number of images: 2550
-
-
+* ![Low Speed:](https://drive.google.com/open?id=1MXz3CpzLv4vh3OF6zq2YIZv6tS_LjBYa)
+* ![RailRoad](https://drive.google.com/open?id=1o4AcA2Die2W_wRB2CMJdxlX3pntwOpFr)
+* ![Signal](https://drive.google.com/open?id=1ctr_O29nPAmp6cB7600SlzF9ojvGWJap)
+* ![High Speed](https://drive.google.com/open?id=1Yfyyf_F2AAfbcdwI8QLoSas_288dB1a_)
+* ![Stop](https://drive.google.com/open?id=1I6ffra5ucflwgm7FfXNmThQcQg6pFHps)
+* ![Yield](https://drive.google.com/open?id=1kfKDZMWs4PkjFvalwp5CClNcXIXlg7og)
 ### Training
 
 ![Training Results for all 6 signs](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
@@ -158,7 +162,13 @@ However, the model for this group recognises 6 signs.
 
 ### Team placed First
 
+It was challenging to deal with the changes of environment when training and testing the car.
+It was observed that, despite training the CNN and showing high accuracy, when using it in the car
+it had differring results depending on the lighting of the room and floor surface.
+This was important.
+We trained additional models to test this further.
+
 #### Final video:
 
-
+![Final](https://youtu.be/0AG4VJ2Yp1g)
 
