@@ -138,12 +138,12 @@ By being careful and optimizing as much as possible and generating a trained mod
 
 * Image size: 28x28
 * Total number of images: 2550
-* ![Low Speed:](https://drive.google.com/open?id=1MXz3CpzLv4vh3OF6zq2YIZv6tS_LjBYa)
-* ![RailRoad](https://drive.google.com/open?id=1o4AcA2Die2W_wRB2CMJdxlX3pntwOpFr)
-* ![Signal](https://drive.google.com/open?id=1ctr_O29nPAmp6cB7600SlzF9ojvGWJap)
-* ![High Speed](https://drive.google.com/open?id=1Yfyyf_F2AAfbcdwI8QLoSas_288dB1a_)
-* ![Stop](https://drive.google.com/open?id=1I6ffra5ucflwgm7FfXNmThQcQg6pFHps)
-* ![Yield](https://drive.google.com/open?id=1kfKDZMWs4PkjFvalwp5CClNcXIXlg7og)
+* [Low Speed:](https://drive.google.com/open?id=1MXz3CpzLv4vh3OF6zq2YIZv6tS_LjBYa)
+* [RailRoad](https://drive.google.com/open?id=1o4AcA2Die2W_wRB2CMJdxlX3pntwOpFr)
+* [Signal](https://drive.google.com/open?id=1ctr_O29nPAmp6cB7600SlzF9ojvGWJap)
+* [High Speed](https://drive.google.com/open?id=1Yfyyf_F2AAfbcdwI8QLoSas_288dB1a_)
+* [Stop](https://drive.google.com/open?id=1I6ffra5ucflwgm7FfXNmThQcQg6pFHps)
+* [Yield](https://drive.google.com/open?id=1kfKDZMWs4PkjFvalwp5CClNcXIXlg7og)
 ### Training
 
 ![Training Results for all 6 signs](https://github.com/DOWmad/PiCar_Project/blob/master/Training_Results.png)
