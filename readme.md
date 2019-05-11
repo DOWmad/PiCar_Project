@@ -170,5 +170,5 @@ We trained additional models to test this further.
 
 #### Final video:
 
-![Final](https://youtu.be/0AG4VJ2Yp1g)
+[Final](https://youtu.be/0AG4VJ2Yp1g)
 
